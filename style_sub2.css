@@ -1,0 +1,397 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "noto-sans";
+    font-size: 16px;
+    line-height: 26px;
+    color: #444;
+    min-width:1350px;
+}
+/*header*/
+
+header .top{
+    background-color: #cf7784;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+header .top p{
+    padding: 5px 0;
+}
+
+header img{
+    display:block;
+}
+.header_inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.navbar{
+    float: right;
+    height: 35px;
+    padding-bottom: 10px;
+}
+.navbar li a:hover, .r_nav li a:hover{
+    color: #cf7784;
+}
+.navbar li{
+    float: left;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.clear{
+    clear: both;
+}
+.logo{
+    padding-bottom: 22.5px;
+}
+#nav li{
+    float: left;
+
+}
+
+#nav li a{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin: 0 10px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+#nav li a:hover{
+    color: #cf7784;
+    transition: all 0.3s;
+
+}
+
+#nav li a span{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height:3px;
+    width:100%;
+    display: inline-block;
+    background: #cf7784;
+    transform: scaleX(0);
+}
+
+#nav li a:hover span{
+    transform: scaleX(1);
+    transition: all 0.3s;
+}
+.r_nav{
+    display: flex;
+    align-items: flex-end;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+.r_nav li{
+    text-align: center;
+    padding-left: 10px;
+}
+
+
+#header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/*main banner*/
+
+#mainbanner{
+    position: relative;
+}
+
+#mainbanner img{
+    width: 100%;
+    display: block;
+}
+
+.mb_text{
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -248.5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.mb_text>p{
+    padding-bottom: 20px;
+}
+
+/*section1*/
+
+#section1, #section2{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+}
+.sec1_inner, .sec2_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+.sec1_inner img:hover{
+transform: scale(1.2, 1.2);
+transition: all 1s;
+}
+
+.sec1_inner a{
+    overflow: hidden;
+    display: block;
+    width: 300px;
+
+}
+.sec1_inner img{
+    width: 100%;
+    display: block;
+}
+
+
+.sec3_inner{
+    width: 920.2px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+}
+
+.sec3_inner1, .sec3_inner2 {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.sec_title{
+    padding-top: 100px;
+}
+h2{
+    padding: 10px 0 40px;
+}
+.title1{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.title2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 26.6px;
+}
+.title2 a:hover{
+    color: #cf7784;
+}
+
+/*section2 plant hover*/
+
+.plant_hv{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    opacity: 0;
+}
+.plant_hv2{
+    position: absolute;
+    top: 0;
+    left: 327px;
+    opacity: 0;
+}
+.plant_hv3{
+    position: absolute;
+    top: 0;
+    left: 653px;
+    opacity: 0;
+}
+.plant_hv4{
+    position: absolute;
+    top: 0;
+    left: 979px;
+    opacity: 0;
+}
+.plant_hv5{
+    position: absolute;
+    top: 381px;
+    left: 0px;
+    opacity: 0;
+}
+.plant_hv6{
+    position: absolute;
+    top: 381px;
+    left: 326px;
+    opacity: 0;
+}
+.plant_hv7{
+    position: absolute;
+    top: 381px;
+    left: 653px;
+    opacity: 0;
+}
+.plant_hv8{
+    position: absolute;
+    top: 381px;
+    left: 979px;
+    opacity: 0;
+}
+
+
+
+.sec2_inner{
+    position: relative;
+}
+
+.plant_hv:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+.plant_hv2:hover, .plant_hv3:hover, .plant_hv4:hover, .plant_hv5:hover, .plant_hv6:hover, .plant_hv7:hover, .plant_hv8:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+
+.plant_img{
+    overflow: hidden;
+}
+.plant_hv{
+    display: block;
+}
+
+/*section3*/
+
+#section3{
+    background: url(images/sub2_flowerplant/goods_bg.jpg) no-repeat left 15%;
+}
+
+.sec3_inner2{
+    padding: 150px 0 150px;
+}
+
+
+.sec3_inner1 img:hover{
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+    }
+    
+    .sec3_inner1 a{
+        overflow: hidden;
+        display: block;
+        width: 300px;
+    
+    }
+    .sec3_inner1 img{
+        width: 100%;
+        display: block;
+    }
+
+.sec3_inner2 img:hover{
+        transform: scale(1.2, 1.2);
+        transition: all 1s;
+        }
+        
+.sec3_inner2 a{
+            overflow: hidden;
+            display: block;
+            width: 300px;
+        
+        }
+.sec3_inner2 img{
+            width: 100%;
+            display: block;
+        }
+
+/*sub_banner*/
+#sub_banner{
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+
+/*footer*/
+
+footer{
+    height: 460px;
+    background: #cf7784;
+    color: white;
+}
+.footer_inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.footer1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #fff;
+}
+.font36{
+    font-size: 36px;
+    padding: 10px 0;
+}
+
+.btn4{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 0px 50px;
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.btn4:hover{
+    color: #444;
+    background: #f6dddd;
+    transition: all 1s;
+}
+.insta li{
+    float: left;
+    padding-left:5px;
+
+}
+.insta img{
+    display: block;
+}
+.footer_sns{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer2{
+    padding-top: 20px;
+}
+.nav_float li{
+    float: left;
+    padding-left: 10px;
+}
+.footer_nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    padding-top: 70px;
+}
